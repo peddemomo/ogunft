@@ -104,7 +104,7 @@ html, body,* {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    width: 20%;
+    max-width: 125px;
 }
 
 .socialIcon {
@@ -688,7 +688,7 @@ h3 {
           margin-top: 10px;
       }
       .socialIcons {
-        width: 30%;
+        width: 120px;
     }
       .main_menu{
           display: none;
