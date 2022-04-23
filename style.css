@@ -72,27 +72,7 @@ html, body,* {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 40px;
     padding: 0;
-}
-
-.headerList:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #324091;
-
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 200ms ease-in;
-}
-
-.headerList:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 .headerListDecoration {
@@ -115,27 +95,8 @@ html, body,* {
 }
 
 .socialContainer {
-    height: 20px;
+    height: 25px;
     cursor: pointer;
-}
-
-.socialContainer:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background: #324091;
-
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 150ms ease-in;
-}
-
-.socialContainer:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
 }
 
 
@@ -143,11 +104,12 @@ html, body,* {
     display: flex;
     flex-direction: row;
     gap: 25px;
+    width: 20%;
 }
 
 .socialIcon {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .leftContentContainer{
