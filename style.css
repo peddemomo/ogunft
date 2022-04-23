@@ -49,7 +49,7 @@ html, body,* {
    display: grid;
    place-items: center;
     background-image: var(--gradient);
-    background-size: 200%;
+    background-size: 400%;
     animation: bg-animation 8s infinite alternate;
 }
 
@@ -790,8 +790,8 @@ h3 {
     .secondScreenBodyContainer{
         width: 80%;
         height: auto;
-        text-align: justify;
-        margin-bottom: 5%;
+        text-align: left;
+        margin-bottom: 10%;
     }
     .secondScreenBody{
         font-size: 16px;
@@ -799,7 +799,7 @@ h3 {
     }
     .thirdPictureContainer{
         width: 90%;
-        height: 215px;
+        height: 170px;
         margin-left: 5%;
     }
     .thirdPicture {
@@ -807,8 +807,19 @@ h3 {
         height: auto;
         overflow: hidden;
     }
+    .fourthScreenContentGroup {
+        margin-bottom: 30px;
+    }
+    .IconContainer {
+        margin-bottom: 40px;
+    }
     .iconTitle{
-        font-size: 34px !important;
+        font-size: 30px !important;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .iconBody {
+        font-size: 18px;
     }
     .timelineTitle{
         padding-top: 0px !important;
