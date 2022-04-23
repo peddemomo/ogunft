@@ -687,6 +687,9 @@ h3 {
       .header{
           margin-top: 10px;
       }
+      .socialIcons {
+        width: 30%;
+    }
       .main_menu{
           display: none;
       }
