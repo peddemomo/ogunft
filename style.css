@@ -325,9 +325,8 @@ h3 {
 
 .fourthScreenTitle {
     display: flex;
-    justify-content: right;
-    padding-top: 4rem;
-    margin-right: 17%;
+    justify-content: center;
+    padding-top: 8rem;
 }
 
 .fourthScreenContent {
@@ -341,7 +340,7 @@ h3 {
 .fourthScreenContentGroup {
     width: 27%;
     margin-top: 2rem;
-    height: 450px;
+    height: 500px;
     box-shadow: 0 5px 20px rgba(0,0,0,.5);
     border-radius: 25px;
     padding: 40px;
@@ -772,14 +771,20 @@ h3 {
         height: auto;
         overflow: hidden;
     }
+    .fourthScreenTitle {
+        padding-top: 4rem;
+    }
     .fourthScreenContentGroup {
         margin-bottom: 30px;
+        width: 35%;
+        height: 450px;
+        padding: 30px;
     }
     .IconContainer {
         margin-bottom: 40px;
     }
     .iconTitle{
-        font-size: 30px !important;
+        font-size: 25px !important;
         line-height: 35px;
         margin-bottom: 20px;
     }
