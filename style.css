@@ -387,55 +387,41 @@ h3 {
 
 
 .thirdScreen {
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 150px;
+    margin-top: 5%;
+    overflow-y: visible;
 }
 
-.marqueeTitle {
+.thirdScreenTitle {
     display: flex;
     justify-content: left;
+    margin-left: 10%;
 }
 
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+    margin-left: 3%;
 
-
-.marquee {
-    width: 1500px;
-    height: 300px;
-    overflow: hidden;
-    display: flex; 
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
 }
 
-.marquee-content {
-    display: flex;
-    list-style: none;
-    animation: scrolling 8s linear infinite;
-}
-
-.marquee-item {
-    height: 300px;
-    width: auto;
-    flex-shrink: 0;
-} 
-
- .marquee-image {
-    height: 100%;
-    width: 100%;
-} 
-
- @keyframes scrolling {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-1500px); }
+.media-element > img {
+    max-width: 90%;
+    min-width: 200px;
+    border-radius: 20px;
 }
 
 
 .fifthScreen {
-    height: 1000px;
-    margin-top: none;
+    max-width: 100%;
+    padding-bottom: 20px;
+    overflow-y: hidden;
     font-family: Arial, Helvetica, sans-serif;
     background-image: var(--gradient);
     background-size: 400%;
@@ -451,10 +437,14 @@ h3 {
 }
 
 #timeline {
+    overflow-y: hidden;
     display: flex;
     background-color: #512f89;
     margin-left: 200px;
     margin-right: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 #timeline:hover .tl-item {
     width: 23.3333%;
@@ -463,7 +453,8 @@ h3 {
     transform: translate3d(0, 0, 0);
     position: relative;
     width: 25%;
-    height: 50vh;
+    min-height: 50vh;
+    padding-bottom: 1rem;
     min-height: 600px;
     color: #fff;
     overflow: hidden;
@@ -543,7 +534,7 @@ h3 {
 .tl-year p {
     font-family: 'Arima Madurai', cursive;
     font-size: 40px;
-    line-height: 0;
+    line-height: 2;
 }
 .tl-bg {
     transform: translate3d(0, 0, 0);
@@ -776,7 +767,7 @@ h3 {
     }
     .fourthScreenContentGroup {
         margin-bottom: 30px;
-        width: 35%;
+        width: 100%;
         height: 450px;
         padding: 30px;
     }
@@ -791,17 +782,39 @@ h3 {
     .iconBody {
         font-size: 18px;
     }
+
+    .thirdScreen {
+        height: 500px;
+    }
+
+    .thirdScreenTitle {
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    .media-scroller {
+        gap: 3%;
+        grid-auto-columns: 70%;
+        margin-left: 10%;
+    }
+
     .timelineTitle{
         padding-top: 0px !important;
     }
       #timeline{
           margin-left: 20px;
           margin-right: 20px;
+          display: flex;
+          flex-direction: column;
+      }
+      #timeline:hover .t1-item {
+          height: 50%;
+          width: none;
       }
       .tl-item{
-        width: 25%;
+        width: 100%;
         max-height: 225px;
-        min-height: 100px ;
+        min-height: 200px ;
       }
       .tl-year p {
             font-size: 24px;
@@ -813,9 +826,7 @@ h3 {
         .tl-content p{
             font-size: 9px !important;
         }
-	  .fourthScreenContentGroup{
-		width:100%;
-	  }
+
       .sixthScreen{
             margin-top: 0px;
       }
