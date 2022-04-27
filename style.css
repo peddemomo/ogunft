@@ -242,8 +242,8 @@ html, body,* {
 
 .secondScreenTop {
     padding: 16px;
-    margin-left: 10%;
-    margin-top: 50px;
+    margin-left: 7%;
+    margin-top: 70px;
     display: flex;
     align-items: center;
 }
@@ -276,7 +276,6 @@ h3 {
 .secondScreenBottom {
     width: 100vw;
     display: flex;
-    padding: 2rem 5rem;
     overflow-y: hidden;
     justify-content: space-between;
 }
@@ -284,7 +283,7 @@ h3 {
 .secondScreenBodyContainer {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     margin-left: 8%;
 }
 
@@ -296,11 +295,11 @@ h3 {
 }
 
 .thirdPictureContainer {
-    height: 400px;
+    height: 600px;
     width: 55%;
     object-fit: cover;
     margin-left: 10%;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .thirdPicture {
@@ -317,6 +316,7 @@ h3 {
     background-image: var(--gradient);
     background-size: 400%;
     animation: bg-animation 8s infinite alternate;
+    margin-top: none;
 }
 
 .fourthScreen * {
@@ -738,6 +738,10 @@ h3 {
         margin-bottom: 0px;
         letter-spacing: 5px;
     }
+    .secondScreenTop {
+        margin-top: 50px;
+        margin-left: 10%;
+    }
     .secondScreenBottom {
         display: block;
         padding: 0 2rem;
@@ -754,7 +758,7 @@ h3 {
     }
     .thirdPictureContainer{
         width: 90%;
-        height: 170px;
+        height: 250px;
         margin-left: 5%;
     }
     .thirdPicture {
