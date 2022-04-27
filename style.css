@@ -553,15 +553,21 @@ h3 {
 .sixthScreen {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    height: 700px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 200px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 6rem;
+    flex-direction: column;
+}
+
+.sixthScreen h3 {
+    margin-left: 10%;
 }
 
   .content {
-    padding: 0;
+    width: 100%;
+    padding-left: 10%;
     margin: 0 auto;
+    padding-bottom: 2rem;
   }
   
   .centerplease {
@@ -640,13 +646,13 @@ h3 {
   }
 
   .footerContainer {
-      display: flex;
-      justify-content: center;
-      margin-top: auto;
-      margin-right: 200px;
-      margin-left: 200px;
-      height: 100px;
-      font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+ 
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .mobile_menu{
@@ -806,9 +812,11 @@ h3 {
         margin-left: 10%;
         margin-bottom: 10%;
     }
-
     .timelineTitle{
-        padding-top: 0px !important;
+        display: flex;
+        align-items: center;
+        padding-top: 0px;
+        margin-right: none;
     }
       #timeline{
           margin-left: 20px;
@@ -817,8 +825,7 @@ h3 {
           flex-direction: column;
       }
       #timeline:hover .t1-item {
-          height: 50%;
-          width: none;
+          width: 50%;
       }
       .tl-item{
         width: 100%;
@@ -840,14 +847,30 @@ h3 {
             margin-top: 0px;
       }
       .sixthScreen h3{
-            margin-left: 0px;
+            margin-left: 10%;
+            margin-top: 10%;
+            margin-bottom: 5%;
       }
       .content{
-          padding-left: 5%;
+          padding-left: 10%;
       }
-      .sixthScreen label , .sixthScreen .plus{
+      .sixthScreen label , .sixthScreen .plus {
           font-size: 16px !important;
           overflow: hidden;
+      }
+      .question {
+        padding: 10px 10px 10px 30px;
+      }
+      .answers {
+          font-size: 13px;
+          margin-left: 5%;
+      }
+      .questions:checked ~ .answers{
+        height: auto;
+        opacity: 1;
+        padding-top: 5px;
+        padding-right: 70px;
+        
       }
 }
 
