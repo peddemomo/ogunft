@@ -361,7 +361,7 @@ h3 {
 
 .IconContainer {
     height: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 10%;
 }
 
 .Icon {
@@ -799,13 +799,12 @@ h3 {
     }
     .IconContainer {
         height: 45px;
-        margin-bottom: 25px;
+        margin-bottom: 7%;
     }
     .iconTitle{
         font-size: 25px !important;
         line-height: 35px;
-        margin-bottom: 20px;
-    }
+    }    
     .iconBody {
         font-size: 18px;
     }
