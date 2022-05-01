@@ -440,8 +440,8 @@ h3 {
 .timelineTitle {
     display: flex;
     justify-content: right;
-    padding-top: 150px;
-    margin-right: 200px;
+    padding-top: 5%;
+    margin-right: 10%;
 }
 
 #timeline {
@@ -514,7 +514,7 @@ h3 {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 30%;
     opacity: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -537,7 +537,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
