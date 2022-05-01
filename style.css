@@ -413,8 +413,10 @@ h3 {
     grid-auto-columns: 28%;
     margin-left: 3%;
 
-    overflow-x: auto;
+    overflow-x: hidden;
     overscroll-behavior-inline: contain;
+
+    cursor: grab;
 }
 
 .media-element > img {
