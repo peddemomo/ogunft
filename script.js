@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const ele = document.getElementById('mediaScroller');
   ele.style.cursor = 'grab';
 
+
+  const faders = document.querySelectorAll('.fade-in')
+
   let pos = { top: 0, left: 0, x: 0, y: 0 };
 
   const mouseDownHandler = function (e) {
@@ -41,3 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
   // Attach the handler
   ele.addEventListener('mousedown', mouseDownHandler);
 });
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
